@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script> -->
 </head>
@@ -28,13 +29,11 @@
         <p>Insert inspiring text here.</p>
     </section>
     <section>
-        <video>
-        </video>
-    </section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YA2ofbdd-G8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    </section>
 </main>
 <footer>
     <address>
-        Telephone: 352 294 2027
+        <p class="phone">(352) 294-2027</p>
         <a href="https://www.google.com/maps/place/Grinter+Hall,+Gainesville,+FL+32601/@29.6492781,-82.3442482,17z/data=!3m1!4b1!4m5!3m4!1s0x88e8a3832ef3fc15:0x6e70c9103d059160!8m2!3d29.6492781!4d-82.3420595">
             272 Grinter Hall
             P.O. Box 115500
@@ -43,12 +42,17 @@
     </address>
     <section class="newletter">
         <form id="newletter-signup" method="POST" action="#">
-            <h4>Sign up for our newsletter for the latest news and events!</h4>
+            <h4>Sign up for our newsletter for the latest news and events! <i class="fas fa-envelope"></i></h4>
             <label for="email">Email: </label>
             <input type="email" name="email"/>
             <input type="submit" name="Sign Up">
         </form>
         <p id="newsletter-signup-validation-results"></p>
+    </section>
+    <section class="social-media">
+        <a href="https://www.facebook.com/pages/Florida-Energy-Systems-Consortium/1491171257838230" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/FESC_UF" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
     </section>
     <p class="copyright-info">Copyright © 2008-2018 Florida Energy Systems Consortium.</p>
 </footer>
