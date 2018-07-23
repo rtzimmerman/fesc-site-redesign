@@ -44,12 +44,10 @@
     <section class="info-column">
         <h3>Our communities</h3>
         <p>We are members of communities all across the State of Floride.</p>
-        <details>
-            <a href="user-facilities.html">Learn more about our locations...</a>
-        </details>
+        <a href="user-facilities.html">Learn more about our locations...</a>
     </section>
     <section class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YA2ofbdd-G8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YA2ofbdd-G8?rel=0&amp;controls=0&amp;showinfo=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
     </section>
 </main>
 <footer>
@@ -64,9 +62,9 @@
     <section class="newletter">
         <form id="newletter-signup" method="POST" action="#">
             <h4>Sign up for our newsletter for the latest news and events! <i class="fas fa-envelope"></i></h4>
-            <label for="email">Email: </label>
-            <input type="email" name="email"/>
-            <input type="submit" name="Sign Up">
+            <label for="newsletter-email">Email: </label>
+            <input id="newsletter-email" type="email" name="email"/>
+            <input id="newletter-signup-submit" type="submit" name="Sign Up">
         </form>
         <p id="newsletter-signup-validation-results"></p>
     </section>
