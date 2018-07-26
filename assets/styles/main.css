@@ -1,15 +1,67 @@
-.contact form {
-  display: flex;
-  flex-direction: column;
-  background-color: aquamarine; }
+.about {
+  text-align: center;
+  padding: 3rem; }
 
+article {
+  display: flex; }
+  article .info-column {
+    padding: 2rem;
+    text-align: justify;
+    flex: 1; }
+
+.facilities-card {
+  border: 1px solid black;
+  border-radius: 2rem;
+  box-shadow: 2px 2px #888888;
+  margin: 2rem;
+  padding: 2rem;
+  width: 30%; }
+  .facilities-card img {
+    width: 30%;
+    height: 30%;
+    border-radius: 2rem; }
+
+main {
+  margin: 2rem; }
+  main .contact form {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 30%; }
+    main .contact form #submit {
+      margin: auto;
+      width: 20%; }
+  main aside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    main aside .user-profile-card {
+      padding: 2rem;
+      border: 1px solid gainsboro;
+      border-radius: 2rem;
+      box-shadow: 2px 2px #888888;
+      width: 30%;
+      height: 40%; }
+      main aside .user-profile-card img {
+        float: left;
+        width: 5%;
+        height: 5%;
+        padding: 2rem;
+        border-radius: 3rem; }
+
+@font-face {
+  font-family: "trade-gothic";
+  src: url("../fonts/trade-gothic-lt.ttf"); }
 body {
+  font-family: "trade-gothic";
   padding: 0;
   margin: 0; }
 
 .logo img {
-  width: 50%;
-  height: 50%; }
+  width: 25%;
+  height: 25%; }
 
 nav ul {
   padding: 0;

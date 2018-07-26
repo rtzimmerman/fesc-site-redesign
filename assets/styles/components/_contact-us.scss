@@ -1,7 +1,39 @@
-.contact {
-    form {
+
+main{
+    margin: 2rem;
+    .contact {
+        form {
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            width: 30%;
+            #submit {
+                margin: auto;
+                width: 20%;
+            }
+        }
+    }
+    aside {
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        background-color: aquamarine;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .user-profile-card {
+            padding: 2rem;
+            border: 1px solid gainsboro;
+            border-radius: 2rem;
+            box-shadow: 2px 2px #888888;
+            width: 30%;
+            height: 40%;
+            img {
+                float: left;
+                width: 5%;
+                height: 5%;
+                padding: 2rem;
+                border-radius: 3rem;
+            }
+        }
     }
 }
+

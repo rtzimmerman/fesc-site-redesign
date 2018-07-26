@@ -1,14 +1,24 @@
+@import 'components/index';
+@import 'components/user-facilities';
 @import 'components/contact-us';
 
+@font-face {
+    font-family: "trade-gothic";
+    src: url('../fonts/trade-gothic-lt.ttf'); 
+}
+
+$font-family: "trade-gothic";
+
 body {
+    font-family: $font-family;
     padding: 0;
     margin: 0;
 }
 
 .logo {
     img {
-        width: 50%;
-        height: 50%;
+        width: 25%;
+        height: 25%;
     }
 }
 

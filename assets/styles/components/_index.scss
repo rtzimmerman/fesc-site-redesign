@@ -1,0 +1,12 @@
+.about {
+    text-align: center;
+    padding: 3rem;
+}
+article {
+    display: flex;
+    .info-column {
+        padding: 2rem;
+        text-align: justify;
+        flex: 1;
+    }
+}
