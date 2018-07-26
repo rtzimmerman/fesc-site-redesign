@@ -1,0 +1,49 @@
+.contact form {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.logo img {
+  width: 50%;
+  height: 50%; }
+
+nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: gray; }
+  nav ul li {
+    flex: 1;
+    padding: 2rem 0 2rem 0;
+    border-left: 1px solid black;
+    list-style-type: none;
+    text-align: center; }
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      padding: 2rem;
+      cursor: pointer; }
+    nav ul li:hover {
+      background-color: bisque; }
+    nav ul li:first-child {
+      border-left: none; }
+
+footer {
+  text-align: center;
+  background-color: grey; }
+  footer .upper-footer {
+    padding: 2rem 4rem 10rem 2rem; }
+    footer .upper-footer address {
+      float: left; }
+    footer .upper-footer .newsletter {
+      float: right; }
+  footer .lower-footer {
+    text-align: center; }
+    footer .lower-footer .social-media i {
+      font-size: 4rem; }
+
+/*# sourceMappingURL=main.css.map */
