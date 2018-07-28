@@ -7,9 +7,13 @@ main{
             margin: auto;
             flex-direction: column;
             width: 30%;
+            @media (max-width: 720px) {
+                width: 80%;
+            }
             #submit {
                 margin: auto;
-                width: 20%;
+                margin-top: 1rem;
+                width: 30%;
             }
         }
     }

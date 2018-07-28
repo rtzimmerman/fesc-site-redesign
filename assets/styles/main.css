@@ -33,7 +33,7 @@ article {
     border-radius: 2rem;
     box-shadow: 2px 2px #888888;
     margin: 2rem;
-    padding: 2rem;
+    padding: 4rem;
     width: 30%; }
     @media (max-width: 720px) {
       article .facilities-card {
@@ -50,9 +50,13 @@ main {
     margin: auto;
     flex-direction: column;
     width: 30%; }
+    @media (max-width: 720px) {
+      main .contact form {
+        width: 80%; } }
     main .contact form #submit {
       margin: auto;
-      width: 20%; }
+      margin-top: 1rem;
+      width: 30%; }
   main aside {
     width: 100%;
     height: 100%;
@@ -121,7 +125,7 @@ footer {
   background-color: grey; }
   footer .upper-footer {
     display: flex;
-    padding: 2rem 4rem 10rem 2rem;
+    padding: 2rem 4rem 6rem 2rem;
     flex-direction: row;
     justify-content: space-between; }
     @media (max-width: 720px) {
@@ -131,5 +135,7 @@ footer {
     text-align: center; }
     footer .lower-footer .social-media i {
       font-size: 4rem; }
+    footer .lower-footer .copyright-info {
+      padding: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
