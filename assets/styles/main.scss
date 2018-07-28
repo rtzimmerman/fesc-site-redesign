@@ -58,13 +58,21 @@ footer {
     text-align: center;
     background-color: grey;
     .upper-footer {
+        display: flex;
         padding: 2rem 4rem 10rem 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: 720px){
+            flex-direction: column;
+        }
+
         address {
-            float: left;
+            // float: left;
         }
     
         .newsletter {
-            float: right;
+            // float: right;
         }
     }
     

@@ -120,11 +120,13 @@ footer {
   text-align: center;
   background-color: grey; }
   footer .upper-footer {
-    padding: 2rem 4rem 10rem 2rem; }
-    footer .upper-footer address {
-      float: left; }
-    footer .upper-footer .newsletter {
-      float: right; }
+    display: flex;
+    padding: 2rem 4rem 10rem 2rem;
+    flex-direction: row;
+    justify-content: space-between; }
+    @media (max-width: 720px) {
+      footer .upper-footer {
+        flex-direction: column; } }
   footer .lower-footer {
     text-align: center; }
     footer .lower-footer .social-media i {
