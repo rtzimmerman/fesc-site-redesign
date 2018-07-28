@@ -19,6 +19,11 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        @media (max-width: 720px){
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
         .user-profile-card {
             padding: 2rem;
             border: 1px solid gainsboro;
@@ -26,6 +31,9 @@ main{
             box-shadow: 2px 2px #888888;
             width: 30%;
             height: 40%;
+            @media (max-width: 720px) {
+                width: 90%;
+            }
             img {
                 float: left;
                 width: 5%;

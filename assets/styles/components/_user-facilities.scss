@@ -1,13 +1,35 @@
-.facilities-card {
-    border: 1px solid black;
-    border-radius: 2rem;
-    box-shadow: 2px 2px #888888;
-    margin: 2rem;
-    padding: 2rem;
-    width: 30%;
-    img {
-        width: 30%;
-        height: 30%;
-        border-radius: 2rem;
+main{
+    h1 {
+        text-align: center;
     }
+}
+article{   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 720px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .facilities-card {
+        border: 1px solid black;
+        border-radius: 2rem;
+        box-shadow: 2px 2px #888888;
+        margin: 2rem;
+        padding: 2rem;
+        width: 30%;
+
+        @media (max-width: 720px){
+            width: 70%;
+        }
+
+        img {
+            width: 30%;
+            height: 30%;
+            border-radius: 2rem;
+        }
+    }
+
 }
