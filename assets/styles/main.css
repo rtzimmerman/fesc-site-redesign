@@ -24,7 +24,7 @@ article {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
-  @media (max-width: 720px) {
+  @media (max-width: 1130px) {
     article {
       flex-direction: column;
       justify-content: center; } }
@@ -35,7 +35,7 @@ article {
     margin: 2rem;
     padding: 4rem;
     width: 30%; }
-    @media (max-width: 720px) {
+    @media (max-width: 1130px) {
       article .facilities-card {
         width: 70%; } }
     article .facilities-card img {
