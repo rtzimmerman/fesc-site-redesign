@@ -76,15 +76,123 @@
             ['2016', 804283],
         ]);
         var options = {
-          title: 'Total Energy Consumption Growth in Florida',
-          curveType: 'function',
-          legend: { position: 'bottom' }
+            title: 'Total Energy Consumption - Growth in Florida: 1960-2016',
+            titlePosition: 'out',
+            curveType: 'function',
+            colors: ['orange'],
+            backgroundColor: {
+            stroke: 'black',
+            strokeWidth: 2,
+        },
+            height: 500,
+            hAxis: {
+                title: 'Year',
+                textStyle: {
+                    fontSize: 8
+                }
+            },
+            vAxis: {
+                title: 'Total Energy Consumption (Billions of BTUs)'
+            },
+            legend: 'none',
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
         chart.draw(data, options);
       }
+
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawBasic);
+
+    function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Energy Production (Billions of BTUs)'],
+        ['1960', 35680],
+        ['1961', 34417],
+        ['1962', 35826],
+        ['1963', 38613],
+        ['1964', 39016],
+        ['1965', 39916],
+        ['1966', 42760],
+        ['1967', 44550],
+        ['1968', 49556],
+        ['1969', 51489],
+        ['1970', 51035],
+        ['1971', 49968],
+        ['1972', 54389],
+        ['1973', 56250],
+        ['1974', 52429],
+        ['1975', 50007],
+        ['1976', 56507],
+        ['1977', 59953],
+        ['1978', 65357],
+        ['1979', 69419],
+        ['1980', 90049],
+        ['1981', 83117],
+        ['1982',104674],
+        ['1983', 91705],
+        ['1984',108740],
+        ['1985',110698],
+        ['1986',116356],
+        ['1987',107606],
+        ['1988',113802],
+        ['1989',232261],
+        ['1990',198986],
+        ['1991',212955],
+        ['1992',230779],
+        ['1993',217028],
+        ['1994',215563],
+        ['1995',220211],
+        ['1996',240343],
+        ['1997',231308],
+        ['1998',205485],
+        ['1999',204114],
+        ['2000',194952],
+        ['2001',158038],
+        ['2002',174327],
+        ['2003',188473],
+        ['2004',179462],
+        ['2005',183175],
+        ['2006',185564],
+        ['2007',190489],
+        ['2008',195232],
+        ['2009',213642],
+        ['2010',223518],
+        ['2011',222956],
+        ['2012',220020],
+        ['2013',229666],
+        ['2014',226863],
+        ['2015',234192],
+      ]);
+
+      var options = {
+        title: 'Renewable Energy - Florida Production: 1960-2015',
+        titlePosition: 'out',
+        backgroundColor: {
+            stroke: 'black',
+            strokeWidth: 2,
+        },
+        height: 500,
+        colors: ['green'],
+        legend: 'none',
+        hAxis: {
+          title: 'Year',
+          textStyle: {
+              fontSize: 8
+          }
+        },
+        vAxis: {
+          title: 'Energy Production (Billions of BTUs)'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
     </script>
 </head>
 <body>
@@ -130,8 +238,10 @@
     <section class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YA2ofbdd-G8?rel=0&amp;controls=0&amp;showinfo=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
     </section>
-    <div id="chart_div"></div>
-    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    <section class="charts">
+        <div id="chart_div" class="chart"></div>
+        <div id="curve_chart" class="chart"></div>
+    </section>
 </main>
 <footer>
     <section class="upper-footer">

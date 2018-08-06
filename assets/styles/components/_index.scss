@@ -17,5 +17,7 @@ article {
 .video {
     @media (max-width: 720px){
         visibility: hidden;
+        margin: 0;
+        padding: 0;
     }
 }

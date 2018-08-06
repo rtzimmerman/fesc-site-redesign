@@ -14,7 +14,9 @@ article {
 
 @media (max-width: 720px) {
   .video {
-    visibility: hidden; } }
+    visibility: hidden;
+    margin: 0;
+    padding: 0; } }
 
 main h1 {
   text-align: center; }
@@ -119,6 +121,18 @@ nav ul {
       background-color: bisque; }
     nav ul li:first-child {
       border-left: none; }
+
+.charts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .charts .chart {
+    padding: 2rem; }
+  @media (max-width: 890px) {
+    .charts {
+      justify-content: center;
+      flex-direction: column; } }
 
 footer {
   text-align: center;

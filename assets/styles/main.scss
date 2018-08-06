@@ -54,6 +54,20 @@ nav {
     }
 }
 
+.charts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .chart {
+        padding: 2rem;
+    }
+    @media (max-width: 890px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
 footer {
     text-align: center;
     background-color: grey;
