@@ -8,3 +8,10 @@ Charts used
     * A line graph was chosen for representing the rate of growth in electricity from 1960-2016. A column chart would work with a trend line parameter, too. But the line chart seemed to communicate the rapid growth in the simplest way.
 
 More information about Google Charts API here: [Google Charts](https://developers.google.com/chart/)
+
+
+### US Energy Information Adminstration API
+1. Renewable energy data API endpoint used: [https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A](https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A)
+1. Electricity consumption data API endpoint used: [https://www.eia.gov/opendata/qb.php?category=40236&sdid=SEDS.TETCB.FL.A](https://www.eia.gov/opendata/qb.php?category=40236&sdid=SEDS.TETCB.FL.A)
+
+**NOTE:** General API documentation can be found [here](https://www.eia.gov/opendata/commands.php)
