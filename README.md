@@ -14,7 +14,4 @@ More information about Google Charts API here: [Google Charts](https://developer
 1. Renewable energy data API endpoint used: [https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A](https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A)
 1. Electricity consumption data API endpoint used: [https://www.eia.gov/opendata/qb.php?category=40236&sdid=SEDS.TETCB.FL.A](https://www.eia.gov/opendata/qb.php?category=40236&sdid=SEDS.TETCB.FL.A)
 
-**NOTES:** 
-* General API documentation can be found [here](https://www.eia.gov/opendata/commands.php)
-* Updated API calls to use HTTPS to requests could be made from GH-Pages hosting environment
-
+**NOTE:** General API documentation can be found [here](https://www.eia.gov/opendata/commands.php)
