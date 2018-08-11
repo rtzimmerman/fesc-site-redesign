@@ -33,12 +33,12 @@
 
         var energyConsumptionDataRequest = new XMLHttpRequest();
         energyConsumptionDataRequest.addEventListener("load", energyConsumptionDataRequestListener);
-        energyConsumptionDataRequest.open("GET", "http://api.eia.gov/series/?api_key=875db06983823521182ddcfaa9ad1a36&series_id=SEDS.TETCB.FL.A");
+        energyConsumptionDataRequest.open("GET", "https://api.eia.gov/series/?api_key=875db06983823521182ddcfaa9ad1a36&series_id=SEDS.TETCB.FL.A");
         energyConsumptionDataRequest.send();
 
         var renewableEnergyDataRequest = new XMLHttpRequest();
         renewableEnergyDataRequest.addEventListener("load", renewableEnergyDataRequestListener);
-        renewableEnergyDataRequest.open("GET", "http://api.eia.gov/series/?api_key=875db06983823521182ddcfaa9ad1a36&series_id=SEDS.REPRB.FL.A");
+        renewableEnergyDataRequest.open("GET", "https://api.eia.gov/series/?api_key=875db06983823521182ddcfaa9ad1a36&series_id=SEDS.REPRB.FL.A");
         renewableEnergyDataRequest.send();
 
         google.charts.load('current', {'packages':['corechart']});
