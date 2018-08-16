@@ -31,14 +31,30 @@ Vue.component('footer-component', {
 </div>`
 })
 
-// Vue.component('social-media', {
-//     template: `
-//         <section class="social-media">
-//             <a href="https://www.facebook.com/pages/Florida-Energy-Systems-Consortium/1491171257838230" target="_blank"><i class="fab fa-facebook-square"></i></a>
-//             <a href="https://twitter.com/FESC_UF" target="_blank"><i class="fab fa-twitter-square"></i></a>
-//             <a href="https://www.linkedin.com/groups/5102147/profile" target="_blank"><i class="fab fa-linkedin"></i></a>
-//         </section>`
-// });
+Vue.component('header-component', {
+    template: `
+    <div>
+        <picture class="logo">
+            <img src="assets/images/fesc-logo-final.jpg" alt="FESC logo" />
+        </picture>  
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">FESC Research</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Outreach</a></li>
+                <li><a href="user-facilities.html">User Facilities</a></li>
+                <li><a href="#">Energy Industry</a></li>
+                <li><a href="#">Advisory Board</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <div>`
+});
+
+new Vue({
+    el: 'header',
+})
 
 new Vue({
     el: 'footer',
